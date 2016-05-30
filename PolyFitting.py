@@ -3,7 +3,7 @@ import sys
 import math
 from matplotlib import pyplot
 
-class LeastSquare:
+class PolyFitting:
     def __init__(self, X_, Y_):
         self.X = X_
         self.Y = Y_
@@ -82,7 +82,7 @@ class LeastSquare:
 
         print(error_list[np.argmin(error_list)])
 
-    def manager(self, dimension_):
+    def run(self, dimension_):
         #training - getting different hypothsis for differnt dimensiosn
         initialized_training_set = self.trasnform_set(self.training)
         x_matrix_training_set, y_vector_training_set = self.initialize_matrices(initialized_training_set)
@@ -105,8 +105,8 @@ class LeastSquare:
 if __name__ == "__main__":
     X = np.load(sys.argv[1])
     Y = np.load(sys.argv[2])
-    ls = LeastSquare(X,Y)
-    ls.manager(16)
+    ls = PolyFitting(X, Y)
+    ls.run(16)
     br = ls.trasnform_set(ls.training)
 
 
