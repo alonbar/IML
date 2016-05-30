@@ -11,10 +11,8 @@ Date: April, 2016
 """
 import adaboost
 import ex6_tools
-import numpy as np
 import matplotlib.pyplot as plt
 import numpy as np
-import adaboost
 
 
 def Q3(): # AdaBoost
