@@ -167,3 +167,4 @@ def view_dtree(dtree, feature_names = None, class_names=None, filename='dtree'):
             dot.node('0', node_to_str(dtree.root),shape=shape(dtree.root))
             build_dot(dot,dtree.root,'0')
             dot.view()
+            print( "ASdfsAD")

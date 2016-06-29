@@ -14,6 +14,18 @@ import sys
 import ex6.ex6_tools
 import math
 
+
+
+
+
+
+
+
+
+
+
+
+
 class AdaBoost(object):
 
     def __init__(self, WL, T):

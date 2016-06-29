@@ -1,0 +1,11 @@
+digraph dtree_best {
+	0 [label="X[0] < -0.99?
+info-gain = nan
+samples = 500" shape=box]
+	00 [label="label = 1
+samples 1" shape=oval]
+	01 [label="label = -1
+samples 499" shape=oval]
+		0 -> 00
+		0 -> 01
+}
